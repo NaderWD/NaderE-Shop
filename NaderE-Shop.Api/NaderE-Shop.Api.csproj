@@ -11,4 +11,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NaderE-Shop.Application\NaderE-Shop.Application.csproj" />
+    <ProjectReference Include="..\NaderE-Shop.Domain\NaderE-Shop.Domain.csproj" />
+    <ProjectReference Include="..\NaderE-Shop.Infrastructure\NaderE-Shop.Infrastructure.csproj" />
+    <ProjectReference Include="..\NaderE-Shop.Persistence\NaderE-Shop.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
