@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaderE-Shop.Api", "NaderE-Shop.Api\NaderE-Shop.Api.csproj", "{A6EB3152-EA3C-4483-8C12-D913D76A6A77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{7C60C35B-CCC4-47F3-8138-2F9AF9E98546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C60C35B-CCC4-47F3-8138-2F9AF9E98546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C60C35B-CCC4-47F3-8138-2F9AF9E98546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6EB3152-EA3C-4483-8C12-D913D76A6A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6EB3152-EA3C-4483-8C12-D913D76A6A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6EB3152-EA3C-4483-8C12-D913D76A6A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6EB3152-EA3C-4483-8C12-D913D76A6A77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,5 +69,6 @@ Global
 		{0B160B9F-BD73-4398-9463-4E106941C761} = {AF4D9FDC-AB71-454C-A0E4-E39890DA9750}
 		{6252C364-C9AD-425B-8023-D779B3DA1C58} = {90C1A513-FC08-40E5-B737-5A939CB40D16}
 		{7C60C35B-CCC4-47F3-8138-2F9AF9E98546} = {90C1A513-FC08-40E5-B737-5A939CB40D16}
+		{A6EB3152-EA3C-4483-8C12-D913D76A6A77} = {A61C1B87-0B85-4898-92F9-1BC25D1F4178}
 	EndGlobalSection
 EndGlobal
