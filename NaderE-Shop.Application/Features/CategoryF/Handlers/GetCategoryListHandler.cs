@@ -14,7 +14,7 @@ namespace NaderE_Shop.Application.Features.CategoryF.Handlers
 
         public async Task<List<CategoryListDto>> Handle(GetCategoryListRequest request, CancellationToken cancellationToken)
         {
-            var categories = _repository.GetAllCategories();
+            var categories = await _repository.GetAllCategories();
             return _mapper.Map<List<CategoryListDto>>(categories);
         }
     }

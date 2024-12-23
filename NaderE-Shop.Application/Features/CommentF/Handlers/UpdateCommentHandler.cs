@@ -15,7 +15,7 @@ namespace NaderE_Shop.Application.Features.CommentF.Handlers
         {
             var comment = await _repository.GetCommentDetails(request.UpdateComment.Id);
             _mapper.Map<UpdateCommentDto>(comment);
-            _repository.Update(comment);
+            await _repository.Update(comment);
             return Unit.Value;
         }
     }

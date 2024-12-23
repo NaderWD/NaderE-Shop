@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9B353125-D382-40C4-AAE3-36FD0494CED0}"
 EndProject
@@ -22,6 +22,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaderE-Shop.Infrastructure", "NaderE-Shop.Infrastructure\NaderE-Shop.Infrastructure.csproj", "{6252C364-C9AD-425B-8023-D779B3DA1C58}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaderE-Shop.Persistence", "NaderE-Shop.Persistence\NaderE-Shop.Persistence.csproj", "{7C60C35B-CCC4-47F3-8138-2F9AF9E98546}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{75731AB6-926B-49C3-AD6D-C50B842580BF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
