@@ -10,7 +10,7 @@ namespace NaderE_Shop.Domain.Models
 
         [Required]
         [DataType(DataType.Text)]
-        public string Text { get; set; }
+        public string? Text { get; set; }
 
         [Required]
         public ShopUser ShopUser { get; set; }

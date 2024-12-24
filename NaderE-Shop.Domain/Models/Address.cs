@@ -8,7 +8,7 @@ namespace NaderE_Shop.Domain.Models
         public string Line1 { get; set; }
 
         [MaxLength(500)]
-        public string Line2 { get; set; }
+        public string? Line2 { get; set; }
 
         [MaxLength(500)]
         public string City { get; set; }

@@ -14,19 +14,19 @@ namespace NaderE_Shop.Domain.Models
         public string PhoneNumber { get; set; }
 
         [DataType((DataType.ImageUrl))]
-        public string ProfilePicture { get; set; }
+        public string? ProfilePicture { get; set; }
 
-        public Address Address { get; set; }
+        public Address? Address { get; set; }
 
-        public int AddressId { get; set; }
+        public int? AddressId { get; set; }
 
         [Required]
-        public ShopUser ShopUser { get; set; }
+        public ShopUser? ShopUser { get; set; }
 
-        public int ShopUserId { get; set; }
+        public int? ShopUserId { get; set; }
 
-        public ShoppingCart ShoppingCart { get; set; }
+        public ShoppingCart? ShoppingCart { get; set; }
 
-        public int ShopingCartId { get; set; }
+        public int? ShopingCartId { get; set; }
     }
 }

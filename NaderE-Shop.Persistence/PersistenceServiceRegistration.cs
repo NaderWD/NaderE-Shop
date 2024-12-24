@@ -11,12 +11,13 @@ namespace NaderE_Shop.Persistence
         public static IServiceCollection ConfigurePersistenceServis(this IServiceCollection services, IConfiguration configuration)
         {
             var connection = configuration.GetConnectionString("ShopDbConnection");
+            services.AddSqlServer<ShopDbContext>(connection);
             services.AddDbContext<ShopDbContext>(options => options.UseSqlServer(connection));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped(typeof(ICategoryRepository), typeof(CategoryRepository));
-            services.AddScoped(typeof(ICommentRepository), typeof(CommentAttribute));
-            services.AddScoped(typeof(ICustomFormatter), typeof(CustomerRepository));
+            services.AddScoped(typeof(ICommentRepository), typeof(CommentRepository));
+            services.AddScoped(typeof(ICustomerRepository), typeof(CustomerRepository));
             services.AddScoped(typeof(IOrderRepository), typeof(OrderRepository));
             services.AddScoped(typeof(IProductRepository), typeof(ProductRepository));
             services.AddScoped(typeof(IShoppingCartRepository), typeof(ShoppingCartRepository));

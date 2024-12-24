@@ -10,10 +10,10 @@ namespace NaderE_Shop.Infrastructure
     {
         public static IServiceCollection ConfigureInfrastructureService(this IServiceCollection service, IConfiguration configuration)
         {
-            var section = configuration.GetSection("EmailSettings");
-            service.Configure<EmailSetting>(section);
+            //var section = configuration.GetSection("EmailSettings");
+            //service.Configure<EmailSetting>(section);
 
-            service.AddTransient<IEmailSender, EmailSender>();
+            //service.AddTransient<IEmailSender, EmailSender>();
 
             return service;
         }

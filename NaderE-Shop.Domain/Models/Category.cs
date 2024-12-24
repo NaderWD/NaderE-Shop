@@ -10,9 +10,9 @@ namespace NaderE_Shop.Domain.Models
 
         [Required]
         [MaxLength(2000)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [DataType((DataType.ImageUrl))]
-        public string Image { get; set; }
+        public string? Image { get; set; }
     }
 }

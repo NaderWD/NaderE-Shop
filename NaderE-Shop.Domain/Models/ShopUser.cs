@@ -17,12 +17,13 @@ namespace NaderE_Shop.Domain.Models
         [Required]
         [MaxLength(255)]
         [DataType(DataType.Password)]
+        [Compare("Password")]
         public string RepeatPassword { get; set; }
 
         [Required]
         [MaxLength(500)]
         [DataType(DataType.EmailAddress)]
-        public string EmailAddress { get; set; }
+        public string? EmailAddress { get; set; }
 
         [Required]
         [DefaultValue(false)]
