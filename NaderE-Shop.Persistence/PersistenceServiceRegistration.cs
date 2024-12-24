@@ -11,7 +11,6 @@ namespace NaderE_Shop.Persistence
         public static IServiceCollection ConfigurePersistenceServis(this IServiceCollection services, IConfiguration configuration)
         {
             var connection = configuration.GetConnectionString("ShopDbConnection");
-            services.AddSqlServer<ShopDbContext>(connection);
             services.AddDbContext<ShopDbContext>(options => options.UseSqlServer(connection));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
