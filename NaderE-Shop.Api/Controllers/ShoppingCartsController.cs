@@ -52,5 +52,13 @@ namespace NaderE_Shop.Api.Controllers
             await _mediator.Send(new DeleteShoppingCartRequest { Id = id });
             return NoContent();
         }
+
+        // ChangeShoppingCartStatusToPaid api/<ShoppingCartsController>/ChangeToPaid/5
+        [HttpPut("ChangeToPaid/{id}")]
+        public async Task<ActionResult> ChangeToPaid(int id, [FromBody] ChangeShoppingCartStatusToPaidDto changeCartStatusToPaid)
+        {
+            await _mediator.Send(new UpdateShoppingCartRequest { Id = id, ChangeToPaid = changeCartStatusToPaid });
+            return NoContent();
+        }
     }
 }
