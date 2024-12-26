@@ -4,19 +4,18 @@ namespace NaderE_Shop.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController(ILogger<WeatherForecastController> logger) : ControllerBase
     {
+#pragma warning disable IDE0300 // Simplify collection initialization
         private static readonly string[] Summaries = new[]
+#pragma warning restore IDE0300 // Simplify collection initialization
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
+#pragma warning disable IDE0052 // Remove unread private members
+        private readonly ILogger<WeatherForecastController> _logger = logger;
+#pragma warning restore IDE0052 // Remove unread private members
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()

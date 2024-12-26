@@ -33,17 +33,15 @@ namespace NaderE_Shop.Api.Controllers
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] CreateAddressDto createAddress)
         {
-            var address = new CreateAddressRequest { CreateAddress = createAddress };
-            var response = await _mediator.Send(address);
-            return Ok(response);
+            var address = await _mediator.Send(new CreateAddressRequest { CreateAddress = createAddress });
+            return Ok(address);
         }
 
         // PUT api/<AddressesController>/5
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromBody] UpdateAddressDto updateAddress)
         {
-            var address = new UpdateAddressRequest { Id = id, UpdateAddress = updateAddress };
-            _ = await _mediator.Send(address);
+            await _mediator.Send(new UpdateAddressRequest { Id = id, UpdateAddress = updateAddress });
             return NoContent();
         }
 
@@ -51,8 +49,7 @@ namespace NaderE_Shop.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
-            var address = new DeleteAddressRequest { Id = id };
-            await _mediator.Send(address);
+            await _mediator.Send(new DeleteAddressRequest { Id = id });
             return NoContent();
         }
     }
