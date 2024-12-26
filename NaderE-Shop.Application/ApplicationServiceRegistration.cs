@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace NaderE_Shop.Application
@@ -9,6 +10,7 @@ namespace NaderE_Shop.Application
         {
             //services.AddAutoMapper(typeof(MappingProfile));
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddMediatR(Assembly.GetExecutingAssembly());
         }
     }
 }
