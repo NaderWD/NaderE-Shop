@@ -14,6 +14,7 @@ namespace NaderE_Shop.Persistence
             services.AddDbContext<ShopDbContext>(options => options.UseSqlServer(connection));
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped(typeof(IAddressRepository), typeof(AddressRepository));
             services.AddScoped(typeof(ICategoryRepository), typeof(CategoryRepository));
             services.AddScoped(typeof(ICommentRepository), typeof(CommentRepository));
             services.AddScoped(typeof(ICustomerRepository), typeof(CustomerRepository));
